@@ -5,9 +5,10 @@ import { updateLoanType, updatePropertyType } from '../../ducks/reducer'
 
 class WizardOne extends Component {
     render(){
-        const { updateLoanType, updatePropertyType } = this.props
+        const { updateLoanType, updatePropertyType } = this.props;
         return(
             <div className="parent-div">
+            {console.log(this.props)}
                 <div className="vert-align">
                     <p>What type of loan will you be needing?</p> <br />
                 

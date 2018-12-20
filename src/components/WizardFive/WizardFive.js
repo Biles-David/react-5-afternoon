@@ -8,12 +8,13 @@ class WizardFive extends Component {
     render(){
         return(
             <div className="parent-div">
-                    <div className="vert-align">    
+                    <div className="vert-align"> 
+                    {console.log(this.props)}   
 
                     <p>Are you currently working with a real estate agent?</p> <br />
                     <div className="row">
-                        <Link to="/wSix"><button onClick={() => updateAgent( true )}>Yes</button></Link>
-                        <Link to="/wSix"><button onClick={() => updateAgent( false )}>No </button></Link>
+                        <Link to="/wSix"><button onClick={() => this.props.updateAgent( true )}>Yes</button></Link>
+                        <Link to="/wSix"><button onClick={() => this.props.updateAgent( false )}>No </button></Link>
                     </div>
                 </div>
             </div>

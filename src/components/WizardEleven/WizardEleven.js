@@ -9,7 +9,7 @@ class WizardEleven extends Component {
             <div className="parent-div">
                 <div className="vert-align">                      
                     <p>Here is an over view of your form:</p> 
-
+                        {console.log(this.props)}
                     <div>
                         <div className="overarching-div">
                             <div className="form">Name: 
@@ -70,7 +70,7 @@ class WizardEleven extends Component {
                         <div className="overarching-div">
                             <div className="form">Currently working with a real estate agent?:
                                 <p className="p2">
-                                    {this.props.realEstateAgent}   
+                                    {String(this.props.realEstateAgent)}   
                                 </p>
                             </div>
                         </div>

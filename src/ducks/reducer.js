@@ -187,7 +187,7 @@ function reducer( state = initialState, action){
     case UPDATE_DOWN_PAYMENT:
     return {
       ...state,
-      downPayment: action.Payment
+      downPayment: action.payload
     }
     case UPDATE_CREDIT:
     return {
